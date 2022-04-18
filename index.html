@@ -13,6 +13,7 @@
 
 <title>Shaojie Hou</title>
 
+<script src="script.js"></script>
 <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -34,6 +35,10 @@
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -287,39 +292,83 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div id="header">
 
 
-
-
-</div>
-
-
+<div class="homepage">
 <p><img src="avatar.jpg" style=width:33% class="img-square"></p>
 <p><br></p>
-<div id="welcome-to-my-homepage" class="section level1">
+<!-- <div id="welcome-to-my-homepage" class="section level1"> -->
 <h1>Welcome to my homepage!</h1>
 <p></br></p>
-<div id="my-name-is-sean-and-im-a-junior-math-major-student-at-the-university-of-texas-at-austin." class="section level5">
+<!-- <div id="my-name-is-sean-and-im-a-junior-math-major-student-at-the-university-of-texas-at-austin." class="section level5"> -->
 <h5>My name is Shaojie Hou and I’m a junior Math major at the University of Texas at Austin.</h5>
-</div>
-<div id="i-enjoy-traveling-coding-and-problem-solving." class="section level5">
+<!-- </div> -->
+<!-- <div id="i-enjoy-traveling-coding-and-problem-solving." class="section level5"> -->
 <h5>I enjoy traveling, coding, and problem solving.</h5>
-</div>
-<div id="im-also-a-shutterbug-especially-interested-in-street-snaps-portraits-and-landscapes." class="section level5">
+<!-- </div> -->
+<!-- <div id="im-also-a-shutterbug-especially-interested-in-street-snaps-portraits-and-landscapes." class="section level5"> -->
 <h5>I’m also a shutterbug, especially interested in street snaps, portraits, and landscapes.</h5>
-</div>
-<div id="feel-free-to-contact-me-and-links-of-my-social-media-have-been-posted." class="section level5">
+<!-- </div> -->
+<!-- <div id="feel-free-to-contact-me-and-links-of-my-social-media-have-been-posted." class="section level5"> -->
 <h5>Feel free to contact me and links of my social media have been posted.</h5>
-</div>
-<div id="my-recent-data-related-projects-will-be-posted-here" class="section level5">
+<!-- </div> -->
+<!-- <div id="my-recent-data-related-projects-will-be-posted-here" class="section level5"> -->
 <h5>My recent coding works of <a href="portfolio.html">data science</a> and <a href="Web Projects.html">web programming </a> will be posted here!</h5>
-<hr />
+<button class="btn--text btn--scroll-to" id="more-btn1">Learn more &DownArrow;</button>
+</div>
+
 </div>
 </div>
+<br>
+<!-- Page2 -->
+<section class="section" id="section--1">
+<h2>Data Analysis</h2>
+<div>
+  <p><em>Check out some examples of my work below</em></p>
+  <p><br></p>
+  <ul>
+  <li><p><i class="fa fa-chart-line"> </i> <a href="https://sean-hsj.github.io/Project1/">Project 1: Description</a></p>
+  <ul>
+  <li><p>Data Wrangling, Exploration, Visualization</p></li>
+  <li><p>This project is aimed to explore the relatioinship between happiness index and population among countries around the world.</p></li>
+  </ul></li>
+  </ul>
+  <p><br></p>
+  <ul>
+  <li><p><i class="fa fa-chart-pie"> </i> <a href="https://sean-hsj.github.io/project2/">Project 2: Description</a></p>
+  <ul>
+  <li><p>Mining, Classification, Prediction</p></li>
+  <li><p>This project is designed to set up the model of prediction between clinical indices and the result of heart disease.</p></li>
+  </ul></li>
+  </ul>
+  <button class="btn--text btn--scroll-to" id="more-btn2">Web Programming &DownArrow;</button>
+</div>
+</section>
+<!-- Page2 ends -->
+
+<br>
 
 
+<!-- Page3 -->
+<section class="section" id="section--2">
+<h2>Web Programming</h2>
+<div>
+  <p><em>Check out some examples of my work below</em></p>
+  <p><br></p>
+  <ul>
+  <li><p><i class="fa fa-chart-line"> </i> <a href="https://sean-hsj.github.io/Web-Project-Guessing-Game/">Guessing Game</a></p>
+  <ul>
+  <li><p>This is a simple guessing game</p></li>
+  <li><p>User can enter an integer between 1 and 20 to take a guess. 
+      Every wrong guess will cause the deduction of one point and the
+      page will<br> record the highest score of the current player.</p></li>
+  </ul></li>
+  </ul>
+  <button class="btn--text btn--scroll-to" id="more-btn3">Back to top &UpArrow;</button>
+</div>
+</section>
 
+<!-- Page3 ends -->
 
 </div>
 
@@ -361,10 +410,29 @@ $(document).ready(function () {
     script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
+
+  $("#more-btn1").click(function() {
+  $('html,body').animate({
+      scrollTop: $("#section--1").offset().top},
+      'slow');
+});
+
+$("#more-btn2").click(function() {
+  $('html,body').animate({
+      scrollTop: $("#section--2").offset().top},
+      'slow');
+});
+
+$("#more-btn3").click(function() {
+  $('html,body').animate({
+      scrollTop: $(".homepage").offset().top},
+      'slow');
+});
 </script>
 
 <footer>
-©Shaojie Hou Last Modified: Mar 21, 2022
+<hr />
+©Shaojie Hou Last Modified: Apr 17, 2022
 </footer>
 
 </body>

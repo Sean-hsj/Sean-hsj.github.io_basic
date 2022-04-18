@@ -66,7 +66,51 @@ img-circle {
   color: #222;
 }
 
+.homepage {
+  flex: 1;
+
+  max-width: 115rem;
+  /* display: grid; */
+  padding-top: 1.5rem;
+  padding-bottom: 10rem;
+  grid-template-columns: 3fr 2fr;
+  row-gap: 3rem;
+  align-content: center;
+  justify-content: center;
+
+  align-items: start;
+  justify-items: start;
+}
+
+.section {
+  font-size: 17px;
+  /* padding: 15rem 50rem; */
+  padding-top: 20rem;
+  padding-bottom: 50rem;
+  padding-left: 15rem;
+  border-top: 1px solid #ddd;
+  /* text-align: center; */
+  transition: transform 1s, opacity 1s;
+  /* position: fixed; */
+}
+
+.btn--text {
+  display: inline-block;
+  background: none;
+  font-size: 1.7rem;
+  font-family: inherit;
+  font-weight: 500;
+  color: var(--color-primary);
+  border: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+
 footer{
 
   text-align: center;
 }
+
