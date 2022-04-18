@@ -88,7 +88,7 @@ img-circle {
   padding-top: 20rem;
   padding-bottom: 50rem;
   padding-left: 10rem;
-  padding-left: 15rem;
+  padding-right: 10rem;
   border-top: 1px solid #ddd;
   /* text-align: center; */
   transition: transform 1s, opacity 1s;
