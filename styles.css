@@ -87,10 +87,10 @@ img-circle {
   /* padding: 15rem 50rem; */
   padding-top: 20rem;
   padding-bottom: 50rem;
-  padding-left: 10rem;
-  padding-right: 10rem;
+  /* padding-left: 10rem;
+  padding-right: 10rem; */
   border-top: 1px solid #ddd;
-  /* text-align: center; */
+  text-align: center;
   transition: transform 1s, opacity 1s;
   /* position: fixed; */
 }
@@ -98,7 +98,7 @@ img-circle {
 .btn--text {
   display: inline-block;
   background: none;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-family: inherit;
   font-weight: 500;
   color: var(--color-primary);
@@ -109,6 +109,9 @@ img-circle {
   transition: all 0.3s;
 }
 
+.container{
+  text-align: left;
+}
 
 footer{
 
