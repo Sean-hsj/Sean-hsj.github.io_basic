@@ -246,7 +246,7 @@ $(document).ready(function () {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">About Sean</a>
+      <a class="navbar-brand" href="#section--1">About Sean</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -295,37 +295,39 @@ $(document).ready(function () {
 
 
 <div class="homepage">
-<p><img src="avatar.jpg" style=width:33% class="img-square"></p>
-<p><br></p>
-<!-- <div id="welcome-to-my-homepage" class="section level1"> -->
-<h1>Welcome to my homepage!</h1>
-<p></br></p>
-<!-- <div id="my-name-is-sean-and-im-a-junior-math-major-student-at-the-university-of-texas-at-austin." class="section level5"> -->
-<h5>My name is Shaojie Hou and I’m a junior Math major at the University of Texas at Austin.</h5>
-<!-- </div> -->
-<!-- <div id="i-enjoy-traveling-coding-and-problem-solving." class="section level5"> -->
-<h5>I enjoy traveling, coding, and problem solving.</h5>
-<!-- </div> -->
-<!-- <div id="im-also-a-shutterbug-especially-interested-in-street-snaps-portraits-and-landscapes." class="section level5"> -->
-<h5>I’m also a shutterbug, especially interested in street snaps, portraits, and landscapes.</h5>
-<!-- </div> -->
-<!-- <div id="feel-free-to-contact-me-and-links-of-my-social-media-have-been-posted." class="section level5"> -->
-<h5>Feel free to contact me and links of my social media have been posted.</h5>
-<!-- </div> -->
-<!-- <div id="my-recent-data-related-projects-will-be-posted-here" class="section level5"> -->
-<h5>My recent coding works of <a href="portfolio.html">data science</a> and <a href="Web Projects.html">web programming </a> will be posted here!</h5>
+<p><img src="avatar.jpg" style=width:30% class="img-square"></p>
+<br>
+<h1 id="title-name">Shaojie Hou</h1>
+<br>
+<p id="welcome">
+  <!-- Future Software Engineer, Shutterbug, and more -->
+</p>
+<br>
 <button class="btn--text btn--scroll-to" id="more-btn1">Learn more &DownArrow;</button>
 </div>
-
-</div>
-</div>
 <br>
-<!-- Page2 -->
 
+<!-- Page2 -->
 <section class="section" id="section--1">
+<div>
+<h1>Welcome to my homepage!</h1>
+<p></br></p>
+<p id="intro">My name is Shaojie Hou and I’m a junior Math major at the University of Texas at Austin.
+I enjoy traveling, coding, and problem solving.
+I’m also a shutterbug, especially interested in street snaps, portraits, and landscapes.
+Feel free to contact me and links of my social media have been posted.
+My recent coding works of <a href="portfolio.html">data science</a> and <a href="Web Projects.html">web programming </a> will be posted here!</p>
+<button class="btn--text btn--scroll-to" id="more-btn2">Learn more &DownArrow;</button>
+</div>
+</section>
+<!-- Page2 ends -->
+
+<!-- Page3 -->
+
+<section class="section" id="section--2">
 <div class="container">
 <h2>Data Analysis</h2>
-  <p><em>Check out some examples of my data analysis work below</em></p>
+  <p><em>Check out examples of my data analysis work below</em></p>
   <p><br></p>
   <ul>
   <li><p><i class="fa fa-chart-line"> </i> <a href="https://sean-hsj.github.io/Project1/">Project 1: Description</a></p>
@@ -342,16 +344,16 @@ $(document).ready(function () {
   <li><p>This project is designed to set up the model of prediction between clinical indices and the result of heart disease.</p></li>
   </ul></li>
   </ul>
-  <button class="btn--text btn--scroll-to" id="more-btn2">Web Programming &DownArrow;</button>
+  <button class="btn--text btn--scroll-to" id="more-btn3">Web Programming &DownArrow;</button>
 </div>
 </section>
-<!-- Page2 ends -->
+<!-- Page3 ends -->
 
 <br>
 
 
-<!-- Page3 -->
-<section class="section" id="section--2">
+<!-- Page4 -->
+<section class="section" id="section--3">
   <div class="container">
   <h2>Web Programming</h2>
   <p><em>Check out examples of my web projects below</em></p>
@@ -365,11 +367,11 @@ $(document).ready(function () {
       page will<br> record the highest score of the current player.</p></li>
   </ul></li>
   </ul>
-  <button class="btn--text btn--scroll-to" id="more-btn3">Back to top &UpArrow;</button>
+  <button class="btn--text btn--scroll-to" id="more-btn4">Back to top &UpArrow;</button>
 </div>
 </section>
 
-<!-- Page3 ends -->
+<!-- Page4 ends -->
 
 </div>
 
@@ -382,6 +384,22 @@ function bootstrapStylePandocTables() {
 $(document).ready(function () {
   bootstrapStylePandocTables();
 });
+
+
+//TYPE WRITING IS NOT WORKING
+var i = 0;
+   var txt = 'Future Software Engineer, Shutterbug, and more.';
+   var speed = 50;
+
+   function typeWriter() {
+      if (i < txt.length) {
+         document.getElementById("welcome").innerHTML += txt.charAt(i);
+         i++;
+         setTimeout(typeWriter, speed);
+      }
+   }
+
+   typeWriter();
 
 
 </script>
@@ -426,6 +444,12 @@ $("#more-btn2").click(function() {
 
 $("#more-btn3").click(function() {
   $('html,body').animate({
+      scrollTop: $("#section--3").offset().top},
+      'slow');
+});
+
+$("#more-btn4").click(function() {
+  $('html,body').animate({
       scrollTop: $(".homepage").offset().top},
       'slow');
 });
@@ -433,7 +457,7 @@ $("#more-btn3").click(function() {
 
 <footer>
 <hr />
-©Shaojie Hou Last Modified: Apr 17, 2022
+©Shaojie Hou 2022
 </footer>
 
 </body>

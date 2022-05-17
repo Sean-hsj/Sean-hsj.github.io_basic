@@ -1,5 +1,5 @@
 body {
-  background-color:#white;
+  background-color:white;
 }
 a {
   color: #bf5700;
@@ -66,13 +66,17 @@ img-circle {
   color: #222;
 }
 
+#title-name{
+  font-size: 50px;
+}
+
 .homepage {
   flex: 1;
 
-  max-width: 115rem;
+  /* max-width: 115rem; */
   /* display: grid; */
   padding-top: 1.5rem;
-  padding-bottom: 10rem;
+  padding-bottom: 30rem;
   grid-template-columns: 3fr 2fr;
   row-gap: 3rem;
   align-content: center;
@@ -80,6 +84,10 @@ img-circle {
 
   align-items: start;
   justify-items: start;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  /* background-color: #ADD8E6; */
 }
 
 .section {
@@ -109,12 +117,27 @@ img-circle {
   transition: all 0.3s;
 }
 
+#intro{
+  text-align: left;
+}
+
+#title-name{
+  font-family:Copperplate;
+}
+
+#welcome{
+  color: slategrey;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Chalkduster;
+  text-align: center;
+}
+
 .container{
   text-align: left;
 }
 
 footer{
-
   text-align: center;
 }
 
