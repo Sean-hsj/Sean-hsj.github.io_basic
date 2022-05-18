@@ -123,13 +123,14 @@ img-circle {
 
 #title-name{
   font-family:Copperplate;
-  font-size: 65px;
+  /* font-size: 65px; */
+  font-size: 4vw;
 }
 
 #welcome{
   color: slategrey;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1vw;
   font-family: Chalkduster;
   text-align: center;
 }
