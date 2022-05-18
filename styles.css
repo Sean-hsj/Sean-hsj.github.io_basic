@@ -72,7 +72,7 @@ img-circle {
 
 .homepage {
   flex: 1;
-
+  background-color: floralwhite;
   /* max-width: 115rem; */
   /* display: grid; */
   padding-top: 1.5rem;
@@ -87,7 +87,7 @@ img-circle {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  /* background-color: #ADD8E6; */
+  
 }
 
 .section {
