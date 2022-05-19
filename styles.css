@@ -72,7 +72,7 @@ img-circle {
 
 .homepage {
   flex: 1;
-  background-color: floralwhite;
+  /* background-color: floralwhite; */
   /* max-width: 115rem; */
   /* display: grid; */
   padding-top: 1.5rem;
@@ -124,13 +124,13 @@ img-circle {
 #title-name{
   font-family:Copperplate;
   /* font-size: 65px; */
-  font-size: 4vw;
+  font-size: 4.5vw;
 }
 
 #welcome{
   color: slategrey;
   font-weight: bold;
-  font-size: 1vw;
+  font-size: 2vw;
   font-family: Chalkduster;
   text-align: center;
 }
