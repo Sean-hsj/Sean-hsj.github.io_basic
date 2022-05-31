@@ -316,7 +316,7 @@ $(document).ready(function () {
 I enjoy traveling, coding, and problem solving.
 I’m also a shutterbug, especially interested in street snaps, portraits, and landscapes.
 Feel free to contact me and links of my social media have been posted.
-My recent coding works of <a href="portfolio.html">data science</a> and <a href="Web Projects.html">web programming </a> will be posted here!</p>
+My recent coding works of <a href="portfolio.html">data science</a> and <a href="portfolio.html">web programming </a> will be posted here!</p>
 <button class="btn--text btn--scroll-to" id="more-btn2">Learn more &DownArrow;</button>
 </div>
 </section>
@@ -377,11 +377,29 @@ My recent coding works of <a href="portfolio.html">data science</a> and <a href=
       page will<br> record the highest score of the current player.</p></li>
   </ul></li>
   </ul>
-  <button class="btn--text btn--scroll-to" id="more-btn4">Back to top &UpArrow;</button>
+  <button class="btn--text btn--scroll-to" id="more-btn4">Learn More &DownArrow;</button>
 </div>
 </section>
 
 <!-- Page4 ends -->
+
+<!-- Page5 -->
+<section class="section" id="section--4">
+  <div class="container">
+    <h2>Photography Works</h2>
+    <p><em>Check out examples of my pictures below</em></p>
+    <p><br></p>
+    <ul>
+      <li> <a href="photography.html">Photo Portfolio</a></p>
+      <ul>
+      <li><p>Landscape pictures I took for personal interests</p></li>
+      </ul></li>
+      </ul>
+  <button class="btn--text btn--scroll-to" id="more-btn5">Back to top &UpArrow;</button>
+</div>
+</section>
+
+<!-- Page5 ends -->
 
 </div>
 
@@ -396,7 +414,6 @@ $(document).ready(function () {
 });
 
 
-//TYPE WRITING IS NOT WORKING
 var i = 0;
    var txt = 'Future Software Engineer, Shutterbug, and more.';
    var speed = 50;
@@ -459,6 +476,12 @@ $("#more-btn3").click(function() {
 });
 
 $("#more-btn4").click(function() {
+  $('html,body').animate({
+      scrollTop: $("#section--4").offset().top},
+      'slow');
+});
+
+$("#more-btn5").click(function() {
   $('html,body').animate({
       scrollTop: $(".homepage").offset().top},
       'slow');
