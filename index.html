@@ -389,6 +389,7 @@ $(document).ready(function () {
       <li><p>This project is designed to set up the model of prediction between clinical indices and the result of heart disease.</p></li>
       </ul></li>
       </ul>
+      <button class="btn--text btn--scroll-to" id="more-btn4">Photography Works &DownArrow;</button>
     </div>
   </section>
 
@@ -406,11 +407,29 @@ $(document).ready(function () {
       <li><p>Landscape pictures I took for personal interests</p></li>
       </ul></li>
       </ul>
-  <button class="btn--text btn--scroll-to" id="more-btn5">Back to top &UpArrow;</button>
+    <button class="btn--text btn--scroll-to" id="more-btn5">Contact Me &DownArrow;</button>
 </div>
 </section>
 
 <!-- Page5 ends -->
+
+<!-- Page6 starts -->
+<section>
+<form class="form" class="section" id="section--5" action="mailto:houshaojie0619@gmail.com" method="post" enctype="text/plain">
+  <h2>CONTACT ME</h2>
+  <p type="Name:"><input name="name" placeholder="Write your name here.."></input></p>
+  <p type="Email:"><input  name="mail" placeholder="Let me know how to contact you back.."></input></p>
+  <p type="Message:"><input name="comment" placeholder="What would you like to tell me.."></input></p>
+  <input type="submit" id="contact_button">Send Message</input>
+  <div id="contact_info">
+    <span class="fa fa-phone"></span>(737)7108439
+    <span class="fa fa-envelope-o"></span> houshaojie0619@gmail.com
+  </div>
+</form>
+<button class="btn--text btn--scroll-to" id="more-btn6">Back to top &UpArrow;</button>
+</section>
+
+<!-- Page6 ends -->
 
 </div>
 
@@ -493,6 +512,12 @@ $("#more-btn4").click(function() {
 });
 
 $("#more-btn5").click(function() {
+  $('html,body').animate({
+      scrollTop: $("#section--5").offset().top},
+      'slow');
+});
+
+$("#more-btn6").click(function() {
   $('html,body').animate({
       scrollTop: $(".homepage").offset().top},
       'slow');
