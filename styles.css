@@ -211,6 +211,6 @@ p:before{content:attr(type);
 
 span{margin:0 5px 0 15px}
 
-li{
+ul{
   margin-right: 10%;
 }
