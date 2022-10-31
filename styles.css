@@ -210,3 +210,7 @@ p:before{content:attr(type);
   box-shadow:10px 10px 40px -14px #000}
 
 span{margin:0 5px 0 15px}
+
+li{
+  margin-right: 10%;
+}
