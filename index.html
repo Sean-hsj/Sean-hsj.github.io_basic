@@ -65,13 +65,13 @@ if (window.hljs) {
 
 
 <link rel="stylesheet" href="styles.css" type="text/css" />
-<link href="avatar.jpeg" rel="icon">
-<link rel="icon" href="IMG_2981.jpg">
+<link href="./images/avatar.jpeg" rel="icon">
+<link rel="icon" href="./images/IMG_2981.jpg">
 
 
 <style type = "text/css">
 .main-container {
-  max-width: 940px;
+  /* max-width: 940px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -290,144 +290,129 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-
-
-<section class="homepage">
-<br><br><br><br><br>
-<p><img src="avatar.jpg" style=width:36% class="img-square"></p>
-
-<h1 id="title-name">Shaojie Hou</h1>
-<p id="welcome">
-  <!-- Future Software Engineer, Shutterbug, and more -->
-</p>
-<br><br><br>
-<button class="btn--text btn--scroll-to" id="more-btn1">Learn more &DownArrow;</button>
+<!-- Top banner -->
+<section class="homepage" >
+  <div class="top-banner__inner site-container">
+    <div class="top-banner__image">
+      <img src="./images/avatar.jpg" alt="sean pic">
+    </div>
+    <div class="top-banner__text">
+      <div class="top-banner__text-up">
+        <span class="brand-span">Hello! I'm</span>
+        <h2 class="top-banner__h2">Shaojie</h2>
+      </div>
+      <div class="top-banner__text-down">
+        <h2 class="top-banner__h2">Hou</h2>
+        <span class="brand-span" id="welcome"></span>
+      </div>
+      <!-- <a href="#" class="brand-button">Read bio > </a> -->
+      <button class="brand-button" class="btn--text btn--scroll-to" id="more-btn1">Learn more &DownArrow;</button>
+    </div>
+  </div>
 </section>
-<br>
+
+<!-- Top banner end -->
+<br><br><br>
+
+</section>
+<hr>
 
 <!-- Page2 -->
-<section class="section" id="section--1">
-<div>
-<h1 id="intro">About Me</h1>
-<p></br></p>
-<p id="intro">My name is Shaojie Hou, I’m a senior math major at the University of Texas at Austin. I enjoy
-  traveling, coding, and problem solving. I’m also a shutterbug, interested in taking street snaps,
-  portraits, and landscapes. Feel free to contact through my socials which have been posted. My recent
-  coding works of <a href="portfolio.html">data science</a> and <a href="portfolio.html">web programming </a> are below!</p>
-<button class="btn--text btn--scroll-to" id="more-btn2">Learn more &DownArrow;</button>
-</div>
+<section class="about-me" class="section" id="section--1">
+  <div class="about-me-inner site-container">
+    <article class="portfolio-wrapper">
+      <div class="portfolio__img">
+        <img src="./images/FullSizeRender.jpg" class="about-me__profile" alt="about me profile picture">
+      </div>
+      <div class="portfolio__bottom">
+        <div class="portfolio__name">
+          <span>S</span>
+          <h2 class="universal-h2">haojie Hou</h2>
+        </div>
+        <p>Shaojie Hou is a senior math major at the University of Texas at Austin.</p>
+      </div>
+    </article>
+    <div class="about-me__text">
+      <div class="about-me-slider">
+        <div class="about-me-single-slide">
+          <h2 class="universal-h2 universal-h2-bckg" id="intro">About me</h2>
+          <p><span>M</span>y name is Shaojie Hou, I’m a senior math major at the University of Texas at Austin. I enjoy
+            traveling, coding, and problem solving. I’m also a shutterbug, interested in taking street snaps,
+            portraits, and landscapes. Feel free to contact through my socials which have been posted. My recent
+            coding works of <a href="portfolio.html">data science</a> and <a href="portfolio.html">web programming </a> are below!</p>
+            <button class="brand-button" class="btn--text btn--scroll-to" id="more-btn2">Learn more &DownArrow;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="about-me-bckg"></div>
 </section>
+
 <!-- Page2 ends -->
-
+<hr>
 <!-- Page3 -->
+<section class="portfolio" id="section--2">
+  <div class="site-container">
+    <h2 class="universal-h2 universal-h2-bckg">Check out examples of my works below</h2>
+    <div class="books">
+      <div class="single-work">
+        <a href="portfolio.html" class="single-book__img">
+          <img src="./images/webProgramming.jpg" alt="webProgramming">
+          <div class="single-book_download">
+            <img src="./images/newpage.jpg" alt="newpage image">
+            <h2>Web Programming</h2>
+          </div>
+        </a>
 
-<section class="section" id="section--2">
-  <div class="container">
-  <h2>Web Programming</h2>
-  <p><em>Check out examples of my web projects below</em></p>
-  <p><br></p>
-  <ul>
-    <li>Order Food Online (In Progress)</a></p>
-    <ul>
-    <li><p>This is a Django Multi Vendor Restaurant website</p></li>
-    <li><p>Builded most of the custom functionalities of Multi-vendor 
-    Restaurant Marketplace website development using Python and Django Framework. 
-    Applied PostgreSQL Database Configuration to manage customer & vendor information 
-    and actulized vendor registration and authentication functionalities. Implemented 
-    PayPal payment gateway & RazorPay Payment Gateway and after order functionalities.
-    </p></li>
-    </ul></li>
-    </ul>
-  <ul>
-    <li> <a href="https://sean-hsj.github.io/Foodies/">Foodies</a></p>
-    <ul>
-    <li><p>This is a group project of a food social media website</p></li>
-    <li><p>A social media website for users to share pictures, descriptions, and likes amongst each other about local
-      restaurants they visited. HTML, CSS/Bootstrap, and JavaScript get involved in the front end to construct the
-      website; PHP script to process form data, user registration and login verification; PHP interface to the MySQL
-      database to manage users data and their profiles into different tables.</p></li>
-    </ul></li>
-    </ul>
-  <ul>
-  <li><p> <a href="https://sean-hsj.github.io/Web-Project-Guessing-Game/">Guessing Game</a></p>
-  <ul>
-  <li><p>This is a simple guessing game</p></li>
-  <li><p>User can enter an integer between 1 and 20 to take a guess. 
-      Every wrong guess will cause the deduction of one point and the
-      page will<br> record the highest score of the current player.</p></li>
-  </ul></li>
-  </ul>
-  <button class="btn--text btn--scroll-to" id="more-btn3">Data Analysis &DownArrow;</button>
-</div>
+      </div>
+      <div class="single-work">
+        <a href="portfolio.html" class="single-book__img">
+          <img src="./images/data.jpg" alt="single work">
+          <div class="single-book_download">
+            <img src="./images/newpage.jpg" alt="newpage image">
+            <h2>Data Analysis</h2>
+          </div>
+        </a>
+
+      </div>
+      <div class="single-work">
+        <a href="photography.html" class="single-book__img">
+          <img src="./images/photography.jpg" alt="single work">
+          <div class="single-book_download">
+            <img src="./images/newpage.jpg" alt="newpage image">
+            <h2>Photography</h2>
+          </div>
+        </a>
+
+      </div>
+    </div>
+    <div class="books-brand-button">
+      <button class="brand-button" class="btn--text btn--scroll-to" id="more-btn3">Contact Me &DownArrow;</button>
+      <!-- <a href="#" class="brand-button">View more</a> -->
+    </div>
+  </div>
 </section>
-
 <!-- Page3 ends -->
 
-<br>
 
-
-<!-- Page4 -->
-<section class="section" id="section--3">
-  <div class="container"> 
-    <h2>Data Analysis</h2>
-      <p><em>Check out examples of my data analysis work below</em></p>
-      <p><br></p>
-      <ul>
-      <li><p><i class="fa fa-chart-line"> </i> <a href="https://sean-hsj.github.io/NEO-Prediction-Analysis/">Project 1: Description</a></p>
-      <ul>
-      <li><p>Prediction Models of Nearest Earth Object</p></li>
-      <li><p>This project is aimed to use the NEO dataset to predict a particular asteroid that is already classified as Nearest Earth Object(NEO) may or may not be hazardous.</p></li>
-      </ul></li>
-      </ul>
-      <p><br></p>
-      <ul>
-      <li><p><i class="fa fa-chart-pie"> </i> <a href="https://sean-hsj.github.io/SDS-Project2/">Project 2: Description</a></p>
-      <ul>
-      <li><p>Mining, Classification, Prediction</p></li>
-      <li><p>This project is designed to set up the model of prediction between clinical indices and the result of heart disease.</p></li>
-      </ul></li>
-      </ul>
-      <button class="btn--text btn--scroll-to" id="more-btn4">Photography Works &DownArrow;</button>
-    </div>
-  </section>
-
-<!-- Page4 ends -->
-
-<!-- Page5 -->
-<section class="section" id="section--4">
-  <div class="container">
-    <h2>Photography Works</h2>
-    <p><em>Check out examples of my pictures below</em></p>
-    <p><br></p>
-    <ul>
-      <li> <a href="photography.html">Photo Portfolio</a></p>
-      <ul>
-      <li><p>Landscape pictures I took for personal interests</p></li>
-      </ul></li>
-      </ul>
-    <button class="btn--text btn--scroll-to" id="more-btn5">Contact Me &DownArrow;</button>
-</div>
-</section>
-
-<!-- Page5 ends -->
 <hr>
-<!-- Page6 starts -->
+<!-- Page4 starts -->
 <section>
-<form class="form" class="section" id="section--5" action="mailto:houshaojie0619@gmail.com" method="post" enctype="text/plain">
+<form class="form" class="section" id="section--3" action="mailto:houshaojie0619@gmail.com" method="post" enctype="text/plain">
   <h2>CONTACT ME</h2>
   <p type="Name:"><input name="name" placeholder="Write your name here.."></input></p>
   <p type="Email:"><input  name="mail" placeholder="Let me know how to contact you back.."></input></p>
   <p type="Message:"><input name="comment" placeholder="What would you like to tell me.."></input></p>
-  <input type="submit" id="contact_button">Send Message</input>
+  <input type="submit" id="contact_button" value = "Send Message" />
   <div id="contact_info">
     <span class="fa fa-phone"></span>(737)7108439
     <span class="fa fa-envelope-o"></span> houshaojie0619@gmail.com
   </div>
 </form>
-<button class="btn--text btn--scroll-to" id="more-btn6">Back to top &UpArrow;</button>
+<button class="brand-button" class="btn--text btn--scroll-to" id="more-btn6">Back to top &UpArrow;</button>
 </section>
 
-<!-- Page6 ends -->
+<!-- Page4 ends -->
 
 </div>
 
