@@ -433,7 +433,7 @@ ul{
   font-size: 11px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #c18f59;
+  color: #597dc1;
   border: 1px solid #fff;
   transition: 0.3s ease; }
   .brand-button:hover, .brand-button:focus {
@@ -498,16 +498,6 @@ ul{
       .about-me-slider .slick-next {
         right: 34%; } }
 
-.span-arrow {
-  padding: 10px 15px;
-  cursor: pointer;
-  color: #c18f59;
-  border: 1px solid #c18f59;
-  border-radius: 50%;
-  transition: 0.3s ease; }
-  .span-arrow:hover {
-    color: #fff;
-    border-color: #fff; }
 
 .portfolio-wrapper {
   width: 390px;
@@ -535,7 +525,7 @@ ul{
     .portfolio-wrapper .portfolio__name span {
       font-size: 90px;
       line-height: 75px;
-      color: #c18f59;
+      color: #597dc1;
       font-family: "Calisto-MT-Bold"; }
       @media (max-width: 992px) {
         .portfolio-wrapper .portfolio__name span {
