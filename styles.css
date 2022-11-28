@@ -434,7 +434,7 @@ ul{
   text-transform: uppercase;
   text-decoration: none;
   color: #597dc1;
-  border: 1px solid #fff;
+  border: 1px solid #597dc1;
   transition: 0.3s ease; }
   .brand-button:hover, .brand-button:focus {
     color: #777; }
@@ -596,7 +596,7 @@ ul{
     .portfolio .books-brand-button .brand-button {
       font-size: 16px;
       text-transform: none;
-      border-color: #c18f59; }
+      border-color: #597dc1; }
       .portfolio .books-brand-button .brand-button:hover {
         border-color: #777; }
   @media (max-width: 1250px) {
