@@ -647,7 +647,7 @@ ul{
         z-index: 1; }
     .single-work .single-book__img:hover .single-book_download {
       visibility: visible;
-      opacity: 0.7; }
+      opacity: 0.6; }
   .single-work .single-book__title {
     margin: 19px 0 18px;
     font-size: 18px; }
