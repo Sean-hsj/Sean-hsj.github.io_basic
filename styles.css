@@ -145,9 +145,6 @@ footer{
 }
 
 
-
-/* body{background:#59ABE3;margin:0} */
-
 .form{width:440px;
   height:540px;background:#e6e6e6;border-radius:8px;
   box-shadow:0 0 40px -10px #000;
@@ -254,11 +251,6 @@ ul{
   @media (max-width: 668px) {
     .universal-h2 {
       font-size: 30px; } }
-
-.universal-h2-bckg {
-  background-image: url("../images/double-line.svg");
-  background-repeat: no-repeat;
-  background-position: center bottom; }
 
 /* Universal style end */
 /* Includes */
