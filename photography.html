@@ -257,6 +257,173 @@ $(document).ready(function () {
 .tabset-dropdown > .nav-tabs > li {
   display: none;
 }
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 5px;
+}
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end:5;
+}
+
+.gallery__item--2 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 5;
+    grid-row-end: 10;
+}
+
+.gallery__item--3 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 10;
+    grid-row-end: 15;
+}
+
+
+.gallery__item--4 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 15;
+    grid-row-end: 20;
+}
+
+
+.gallery__item--5 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 20;
+    grid-row-end: 25;
+}
+
+
+.gallery__item--6 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 30;
+    grid-row-end: 35;
+}
+
+.gallery__item--7 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 35;
+    grid-row-end: 40;
+}
+
+.gallery__item--8 {
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 40;
+    grid-row-end: 50;
+}
+
+.gallery__item--9 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 40;
+    grid-row-end: 50;
+}
+
+.gallery__item--10 {
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 50;
+    grid-row-end: 60;
+}
+
+.gallery__item--11 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 50;
+    grid-row-end: 60;
+}
+
+.gallery__item--12 {
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 60;
+    grid-row-end: 70;
+}
+
+.gallery__item--13 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 60;
+    grid-row-end: 70;
+}
+
+.gallery__item--14 {
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 70;
+    grid-row-end: 80;
+}
+
+.gallery__item--14 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 70;
+    grid-row-end: 80;
+}
+
+.gallery__item--15 {
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 70;
+    grid-row-end: 80;
+}
+
+.gallery__item--16 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 85;
+    grid-row-end: 90;
+}
+
+.gallery__item--17 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 95;
+    grid-row-end: 100;
+}
+
+.gallery__item--18 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 100;
+    grid-row-end: 105;
+}
+
+.gallery__item--19 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 105;
+    grid-row-end: 110;
+}
+
+.gallery__item--20 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 110;
+    grid-row-end: 115;
+}
+
+.des-text{
+  font-family:fantasy;
+  font-size: 1.5vw;
+}
 </style>
 
 <!-- code folding -->
@@ -270,8 +437,6 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
-
-
 
 
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
@@ -332,60 +497,104 @@ $(document).ready(function () {
 </div>
 
 
-<p><em>Check out some examples of my work below</em></p>
+<div class="des-text"><p><em>Check out some examples of my work below</em></p></div>
 
-<!-- first grid -->
-<div class="w3-row-padding w3-padding-16 w3-center">
-  <div class="w3-half">
-    <img src="photo portfolio/mountain1.jpeg" alt="Popsicle" style="width:100%">
-    <h3>Minya Konka, 2021</h3>
-    <!-- <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p> -->
-  </div>
-  <div class="w3-half">
-    <img src="photo portfolio/mountain2.jpeg" alt="Salmon" style="width:100%">
-    <h3>Dongchuan Red Land, 2020</h3>
-    <!-- <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p> -->
-  </div>
+<div class="gallery">
+  <figure class="gallery__item gallery__item--1">
+    <img src="photo portfolio/mountain1.jpeg" class="gallery__img" alt="Image 1">
+    <div class="des-text"> Minya Konka, 2021</div>
+  </figure>
+  <figure class="gallery__item gallery__item--2">
+    <img src="photo portfolio/ginkgo.jpeg" class="gallery__img" alt="Image 2">
+    <div class="des-text"> Ginkgo in Gudong, Yunnan, China, 2020</div>
+  </figure>
+  <figure class="gallery__item gallery__item--3">
+    <img src="photo portfolio/mountain2.jpeg" class="gallery__img" alt="Image 3">
+    <div class="des-text"> Dongchuan Red Land, 2020</div>
+  </figure>
+  <figure class="gallery__item gallery__item--4">
+    <img src="photo portfolio/galveston.JPG" class="gallery__img" alt="Image 4">
+    <div class="des-text"> Galveston, Texas, 2022</div>
+  </figure>
+  <figure class="gallery__item gallery__item--5">
+    <img src="photo portfolio/burnet1.JPG" class="gallery__img" alt="Image 5">
+    <div class="des-text"> Burnet State Park, Texas, 2022</div>
+  </figure>
+  <figure class="gallery__item gallery__item--6">
+    <img src="photo portfolio/drone1.jpeg" class="gallery__img" alt="Image 6">
+    <div class="des-text"> Beihai Shidi, Tengchong, China, 2020</div>
+  </figure>
+  <figure class="gallery__item gallery__item--7">
+    <img src="photo portfolio/drone2.jpeg" class="gallery__img" alt="Image 7">
+    <div class="des-text"> Moshi Park Scenic Area, Sichuan, China, 2021</div>
+  </figure>
 
-</div>
+  <figure class="gallery__item gallery__item--8">
+    <img src="photo portfolio/star2.jpeg" class="gallery__img" alt="Image 8">
+    <div class="des-text"> Geminids Meteor Shower at LBJ Ranch, Texas, 2021</div>
+  </figure>
 
-<!-- second grid -->
-<div class="w3-row-padding w3-padding-16 w3-center">
-  <div class="w3-half">
-    <img src="photo portfolio/ginkgo.jpeg" alt="Sandwich" style="width:100%">
-    <h3>Ginkgo in Gudong, Yunnan, China, 2020</h3>
-    <!-- <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p> -->
-  </div>
-  <div class="w3-half">
-    <img src="photo portfolio/drone2.jpeg" alt="Croissant" style="width:100%">
-    <h3>Moshi Park Scenic Area, 2021</h3>
-    <!-- <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p> -->
-  </div>
-</div>
+  <figure class="gallery__item gallery__item--9">
+    <img src="photo portfolio/burnet2.JPG" class="gallery__img" alt="Image 9">
+    <div class="des-text"> Burnet State Park, Texas, 2022</div>
+  </figure>
 
-<!-- third grid -->
-<div class="w3-row-padding w3-padding-16 w3-center">
-  <div class="w3-quarter">
-    <img src="photo portfolio/star1.jpeg" alt="Popsicle" style="width:100%">
-    <h3>Starry in Three Rivers Petroglyph Site, 2019</h3>
-    <!-- <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p> -->
-  </div>
-  <div class="w3-quarter">
-    <img src="photo portfolio/star2.jpeg" alt="Salmon" style="width:100%">
-    <h3>Geminids Meteor Shower at LBJ Ranch, 2021</h3>
-    <!-- <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p> -->
-  </div>
-  <div class="w3-quarter">
-    <img src="photo portfolio/wuhan.jpeg" alt="Sandwich" style="width:100%">
-    <h3>The Second Wuhan Yangtze River Bridge, 2021</h3>
-    <!-- <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p> -->
+  <figure class="gallery__item gallery__item--10">
+    <img src="photo portfolio/star1.jpeg" class="gallery__img" alt="Image 10">
+    <div class="des-text"> Starry in Three Rivers Petroglyph Site, NM, 2019</div>
+  </figure>
 
-  </div>
-  <div class="w3-quarter">
-    <img src="photo portfolio/tibet.jpeg" alt="Croissant" style="width:100%">
-    <h3>Potala Palace, 2021</h3>
-    <!-- <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p> -->
-  </div>
+  <figure class="gallery__item gallery__item--11">
+    <img src="photo portfolio/wuhan.jpeg" class="gallery__img" alt="Image 11">
+    <div class="des-text"> The Second Wuhan Yangtze River Bridge, 2021</div>
+  </figure>
+
+  <figure class="gallery__item gallery__item--12">
+    <img src="photo portfolio/road.jpeg" class="gallery__img" alt="Image 12">
+    <div class="des-text"> Xiamen, China, 2021</div>
+  </figure>
+
+  <figure class="gallery__item gallery__item--13">
+    <img src="photo portfolio/tibet.jpeg" class="gallery__img" alt="Image 13">
+    <div class="des-text">Potala Palace, Tibet, 2021</div>
+  </figure>
+
+
+  <figure class="gallery__item gallery__item--14">
+    <img src="photo portfolio/film1.JPG" class="gallery__img" alt="Image 14">
+    <div class="des-text"> Lake Travis, Texas, 2021</div>
+  </figure>
+
+  <figure class="gallery__item gallery__item--15">
+    <img src="photo portfolio/film2.JPG" class="gallery__img" alt="Image 15">
+    <div class="des-text"> Lake Travis, Texas, 2021</div>
+  </figure>
+
+  <figure class="gallery__item gallery__item--16">
+    <img src="photo portfolio/santafe.jpg" class="gallery__img" alt="Image 16">
+    <div class="des-text">Santa Fe, NM, 2022</div>
+  </figure>
+
+
+  <figure class="gallery__item gallery__item--17">
+    <img src="photo portfolio/xiamen.jpg" class="gallery__img" alt="Image 17">
+    <div class="des-text"> Xiamen, China, 2021</div>
+  </figure>
+
+  <figure class="gallery__item gallery__item--18">
+    <img src="photo portfolio/hengshan.jpg" class="gallery__img" alt="Image 18">
+    <div class="des-text"> Hengshan, China, 2021</div>
+  </figure>
+
+  <figure class="gallery__item gallery__item--19">
+    <img src="photo portfolio/bridge.jpg" class="gallery__img" alt="Image 19">
+    <div class="des-text"> 360 Bridge, Texas, 2019</div>
+  </figure>
+
+  <figure class="gallery__item gallery__item--20">
+    <img src="photo portfolio/heshun.jpg" class="gallery__img" alt="Image 20">
+    <div class="des-text"> Tengchong, China, 2020</div>
+  </figure>
 </div>
 
 
